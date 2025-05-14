@@ -27,7 +27,6 @@ document.getElementById("studentForm").addEventListener("submit", function(e) {
   addStudentToTable(student, students.length - 1);
 
   calcularPromedio();
-
   this.reset();
   
 });
@@ -36,13 +35,9 @@ tableBody.addEventListener("click", function (e) {
   if (e.target.classList.contains("eliminar-btn")) {
     const index = parseInt(e.target.getAttribute("data-index"));
 
-    // Eliminar el estudiante del array
     students.splice(index, 1);
-
-    // Actualizar la tabla y los índices de los botones de eliminar
+    
     actualizarTabla();
-
-    // Recalcular el promedio
     calcularPromedio();
   }
 });
@@ -64,7 +59,7 @@ function addStudentToTable(student, index) {
 
 function calcularPromedio() {
   if (students.length === 0) {
-    averageDiv.textContent = "0.00"; // Mostrar 0.00 si no hay estudiantes
+    averageDiv.textContent = "0.00";
     return;
   }
 
