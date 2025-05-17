@@ -11,7 +11,7 @@
 <body>
     <div class="text-center mt-5">
         <h3 class="mb-5">Seguimiento de Calificaciones de estudiantes</h3>
-        <div class="card promedio-card mx-auto border-primary">
+        <div class="card promedio-card mx-auto border-primary w-50">
             <div class="card-header bg-primary text-white promedio-header">
                 Promedio de calificaciones
             </div>
@@ -21,7 +21,7 @@
         </div>
     </div>
 
-    <div class="container form-container mt-5 p-4 border border-primary rounded bg-white">
+    <div class="container form-container mt-5 p-4 border border-primary rounded bg-white w-50">
         <form id="studentForm">
             <div class="mb-3">
                 <label for="name" class="form-label">Nombre</label>
@@ -35,16 +35,16 @@
                 <label for="Grade" class="form-label">Calificación (1.0 - 7.0)</label>
                 <input type="number" class="form-control" id="grade" step="0.1" min="1.0" max="7.0">
             </div>
-            <button type="submit" class="btn btn-primary">Agregar estudiante</button>
+            <button type="submit" class="btn btn-primary mx-auto">Agregar estudiante</button>
         </form>
     </div>
 
     <table class="table table-bordered table-striped table-hover table-sm text-center w-50 mx-auto mt-5" id="studentsTable">
         <thead>
             <tr>
-                <th class="w-25">Nombre</th>
+                <th class="w-50">Nombre</th>
                 <th class="w-50">Apellido</th>
-                <th class="w-25">Nota</th>
+                <th class="w-50">Nota</th>
                 <th></th>
             </tr>
         </thead>
